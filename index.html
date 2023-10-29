@@ -9,29 +9,35 @@
             overflow: hidden;
         }
 
+        .banner-container {
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
         .banner {
             position: absolute;
             top: 0;
             left: 100%;
-            white-space: nowrap;
             color: white;
             font-family: "Arial", sans-serif; /* Replace with your preferred modern font */
             font-size: 24px;
-            padding: 10px 0;
             animation: scrollBanner 10s linear infinite;
         }
 
         @keyframes scrollBanner {
             0% {
-                transform: translateX(100%);
+                left: 100%;
             }
             100% {
-                transform: translateX(-100%);
+                left: -100%;
             }
         }
     </style>
 </head>
 <body>
-    <div class="banner">You don't lack time... you lack focus</div>
+    <div class="banner-container">
+        <div class="banner">You don't lack time... you lack focus</div>
+    </div>
 </body>
 </html>
