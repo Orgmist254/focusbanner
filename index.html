@@ -10,27 +10,14 @@
             margin: 0;
             padding: 0;
         }
-        .scrolling-container {
+        .scrolling-text {
             position: absolute;
             white-space: nowrap;
             font-size: 24px;
-            font-family: 'Arial', sans-serif; /* You can change the font here */
+            font-family: 'Arial', sans-serif; /* Change the font to your desired modern font */
             animation: scrollText 10s linear infinite;
         }
-        .scrolling-text {
-            display: inline-block;
-            transform: translateX(100%);
-            animation: scrollLetter 10s linear infinite;
-        }
         @keyframes scrollText {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-        @keyframes scrollLetter {
             0% {
                 transform: translateX(100%);
             }
@@ -41,46 +28,6 @@
     </style>
 </head>
 <body>
-    <div class="scrolling-container">
-        <div class="scrolling-text">Y</div>
-        <div class="scrolling-text">o</div>
-        <div class="scrolling-text">u</div>
-        <div class="scrolling-text">'</div>
-        <div class="scrolling-text">r</div>
-        <div class="scrolling-text">e</div>
-        <div class="scrolling-text"> </div>
-        <div class="scrolling-text">d</div>
-        <div class="scrolling-text">o</div>
-        <div class="scrolling-text">n</div>
-        <div class="scrolling-text">'t</div>
-        <div class="scrolling-text"> </div>
-        <div class="scrolling-text">l</div>
-        <div class="scrolling-text">a</div>
-        <div class="scrolling-text">c</div>
-        <div class="scrolling-text">k</div>
-        <div class="scrolling-text"> </div>
-        <div class="scrolling-text">t</div>
-        <div class="scrolling-text">i</div>
-        <div class="scrolling-text">m</div>
-        <div class="scrolling-text">e</div>
-        <div class="scrolling-text">.</div>
-        <div class="scrolling-text">.</div>
-        <div class="scrolling-text">.</div>
-        <div class="scrolling-text"> </div>
-        <div class="scrolling-text">y</div>
-        <div class="scrolling-text">o</div>
-        <div class="scrolling-text">u</div>
-        <div class="scrolling-text"> </div>
-        <div class="scrolling-text">l</div>
-        <div class="scrolling-text">a</div>
-        <div class="scrolling-text">c</div>
-        <div class="scrolling-text">k</div>
-        <div class="scrolling-text"> </div>
-        <div class="scrolling-text">f</div>
-        <div class="scrolling-text">o</div>
-        <div class="scrolling-text">c</div>
-        <div class="scrolling-text">u</div>
-        <div class="scrolling-text">s</div>
-    </div>
+    <div class="scrolling-text">You don't lack time... you lack focus.</div>
 </body>
 </html>
