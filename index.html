@@ -3,63 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Continuous Scrolling Text</title>
+    <title>Scrolling Text</title>
     <style>
         body {
-            overflow: hidden;
             margin: 0;
             padding: 0;
-        }
-        .scrolling-container {
-            white-space: nowrap;
-            font-size: 24px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a readable font */
-            animation: scrollText 25s linear infinite; /* Slower animation */
-            color: white; /* Set the text color to white */
+            overflow: hidden;
         }
         .scrolling-text {
-            display: inline-block;
-            opacity: 1;
-            animation: scrollLetter 25s linear infinite, enterText 5s linear 5s infinite; /* Slower entry animation */
+            position: absolute;
+            white-space: nowrap;
+            color: white;
+            font-size: 24px;
+            font-family: 'Arial', sans-serif; /* Replace with your desired modern font */
+            animation: scroll 10s linear infinite;
         }
-        @keyframes scrollText {
+        @keyframes scroll {
             0% {
                 transform: translateX(100%);
             }
             100% {
                 transform: translateX(-100%);
-            }
-        }
-        @keyframes scrollLetter {
-            0% {
-                transform: translateX(100%);
-            }
-            5% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            95% {
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-        @keyframes enterText {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(0);
             }
         }
     </style>
 </head>
 <body>
-    <div class="scrolling-container">
-        <div class="scrolling-text">You don't lack time... you lack focus.</div>
-    </div>
+    <div class="scrolling-text">You don't lack time... you lack focus.</div>
 </body>
 </html>
