@@ -10,13 +10,14 @@
             padding: 0;
             overflow: hidden;
         }
-        .scrolling-text {
+        .scrolling-text-container {
             position: absolute;
             white-space: nowrap;
             color: white;
-            font-size: 24px;
+            font-size: 16px; /* Smaller font size */
             font-family: 'Arial', sans-serif; /* Replace with your desired modern font */
             animation: scroll 10s linear infinite;
+            right: 0; /* Start off the screen on the right */
         }
         @keyframes scroll {
             0% {
@@ -29,6 +30,8 @@
     </style>
 </head>
 <body>
-    <div class="scrolling-text">You don't lack time... you lack focus.</div>
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">You don't lack time... you lack focus.</div>
+    </div>
 </body>
 </html>
