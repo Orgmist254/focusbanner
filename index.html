@@ -12,15 +12,15 @@
         }
         .scrolling-container {
             white-space: nowrap;
-            font-size: 24px; /* Smaller font size */
+            font-size: 24px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a readable font */
-            animation: scrollText 15s linear infinite; /* Slightly faster animation */
+            animation: scrollText 18s linear infinite; /* Slightly faster animation */
             color: white; /* Set the text color to white */
         }
         .scrolling-text {
             display: inline-block;
             opacity: 1;
-            animation: scrollLetter 15s linear infinite; /* Slightly faster animation */
+            animation: scrollLetter 18s linear infinite, enterText 3s linear 3s infinite; /* Faster entry animation */
         }
         @keyframes scrollText {
             0% {
@@ -42,7 +42,15 @@
             }
             100% {
                 transform: translateX(-100%);
-                opacity: 0; /* Faster fade out */
+                opacity: 0;
+            }
+        }
+        @keyframes enterText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
             }
         }
     </style>
